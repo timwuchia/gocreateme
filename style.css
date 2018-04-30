@@ -395,7 +395,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #a7aab2;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -469,7 +469,8 @@ html {
 }
 
 body {
-	background: #fff;
+	/*background: #fff;*/
+    background: #2F3238;
 	/* Fallback for when there is no custom background color defined. */
 }
 

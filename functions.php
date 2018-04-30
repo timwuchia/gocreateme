@@ -159,3 +159,30 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Function to change "posts" to "Team Members" in the admin side menu
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Team Members';
+    $submenu['edit.php'][5][0] = 'Team Members';
+    $submenu['edit.php'][10][0] = 'Add Team Member';
+    $submenu['edit.php'][16][0] = 'Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'change_post_menu_label' );
+// Function to change post object labels to "news"
+function change_post_object_label() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Team Members';
+    $labels->singular_name = 'Team Member';
+    $labels->add_new = 'Add Team Member';
+    $labels->add_new_item = 'Add Team Member';
+    $labels->edit_item = 'Edit Team Member';
+    $labels->new_item = 'Team Member';
+    $labels->view_item = 'View Team Member';
+    $labels->search_items = 'Search Team Members';
+    $labels->not_found = 'No Team Members found';
+    $labels->not_found_in_trash = 'No Team Members found in Trash';
+}
+add_action( 'init', 'change_post_object_label' );

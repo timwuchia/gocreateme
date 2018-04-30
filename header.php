@@ -24,6 +24,9 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
+			<ul class='logo'>
+				<li><a href="<?php echo get_home_url(); ?>">Go Create Me</a></li>
+			</ul>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

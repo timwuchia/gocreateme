@@ -18,6 +18,20 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
+        <?php 
+
+        if(function_exists('get_field')) {
+
+        	$image = get_field('top_banner');
+        	$size = 'large';
+        	echo wp_get_attachment_image ($image, $size);
+
+        }
+
+        	 
+
+         ?>
+
         <?php
         while ( have_posts() ) :
             the_post();

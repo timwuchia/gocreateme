@@ -163,9 +163,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Team Members';
-    $submenu['edit.php'][5][0] = 'Team Members';
-    $submenu['edit.php'][10][0] = 'Add Team Member';
+    $menu[5][0] = 'Works';
+    $submenu['edit.php'][5][0] = 'Works';
+    $submenu['edit.php'][10][0] = 'Add Work';
     $submenu['edit.php'][16][0] = 'Tags';
     echo '';
 }
@@ -174,15 +174,15 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 function change_post_object_label() {
     global $wp_post_types;
     $labels = &$wp_post_types['post']->labels;
-    $labels->name = 'Team Members';
-    $labels->singular_name = 'Team Member';
-    $labels->add_new = 'Add Team Member';
-    $labels->add_new_item = 'Add Team Member';
-    $labels->edit_item = 'Edit Team Member';
-    $labels->new_item = 'Team Member';
-    $labels->view_item = 'View Team Member';
-    $labels->search_items = 'Search Team Members';
-    $labels->not_found = 'No Team Members found';
-    $labels->not_found_in_trash = 'No Team Members found in Trash';
+    $labels->name = 'Works';
+    $labels->singular_name = 'Work';
+    $labels->add_new = 'Add Work';
+    $labels->add_new_item = 'Add Work';
+    $labels->edit_item = 'Edit Work';
+    $labels->new_item = 'Work';
+    $labels->view_item = 'View Work';
+    $labels->search_items = 'Search Works';
+    $labels->not_found = 'No Works found';
+    $labels->not_found_in_trash = 'No Works found in Trash';
 }
 add_action( 'init', 'change_post_object_label' );

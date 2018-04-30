@@ -983,3 +983,22 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+#site-navigation {
+	background-color: black;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 99;
+}
+
+#primary-menu {
+	display: flex;
+	justify-content: space-around;
+	width: 550px;
+}
+
+#site-navigation ul li:first of type {
+	float: left;
+}

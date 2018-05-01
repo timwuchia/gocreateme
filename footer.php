@@ -14,6 +14,19 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+
+		<h3 class="see-work">See Our Work</h3>
+
+		<h3 class="short-contact-info">hello@gocreateme.com | 7788987654</h3>
+
+		<nav class="social-media">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>		
+			</ul>
+		</nav>
 		
 	</footer><!-- #colophon -->
 </div><!-- #page -->

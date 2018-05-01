@@ -18,27 +18,55 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-        <?php 
+        <div class="home-top">
+	        <img src="<?php the_field('top_banner'); ?>" class="top-banner" alt="top-banner" />
+	        <p>We are a web development team based in Vancouver, feel free to contact us if you need a website</p>
+        </div>
 
-        if(function_exists('get_field')) {
+       <?php
+				$args = array(
+					'numberposts' => 3,
+					'posts_per_page' => 3,
+					'offset' => 0,
+					// 'category' => 0,
+					'orderby' => 'post_date',
+					'order' => 'DESC',
+					'include' => '',
+					'exclude' => '',
+					'meta_key' => '',
+					'meta_value' =>'',
+					'post_type' => 'post',
+					'post_status' => 'draft, publish, future, pending, private',
+					'suppress_filters' => true
+				);
 
-        	$image = get_field('top_banner');
-        	$size = 'large';
-        	echo wp_get_attachment_image ($image, $size);
+				$recent_posts = wp_get_recent_posts( $args, ARRAY_A );
 
-        }
+				?>
 
-        	 
-
-         ?>
-
-        <?php
-        while ( have_posts() ) :
-            the_post();
+				<?php
+				    $query = new WP_Query( $args );
+					if ( $query->have_posts() ) {
+					        
+					        echo "<div class='recent-works'>";
 
 
-        endwhile; // End of the loop.
-        ?>
+					        while($query->have_posts())	{
+					        	$query->the_post();
+					        	echo "<div class='recent-work-wrapper'>";
+					        	echo "<a href='";
+					        	echo the_permalink();
+					        	echo"'>";
+					        	the_post_thumbnail('medium');
+					        	echo "</a>";
+					        	echo "</div>";
+
+					        }			
+					        	echo "</div>";	    		               
+					        }
+									    
+				?>
+
 
         </main><!-- #main -->
     </div><!-- #primary -->

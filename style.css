@@ -1002,3 +1002,83 @@ object {
 #site-navigation ul li:first of type {
 	float: left;
 }
+
+#site-navigation ul li a {
+	color: #a7aab2;
+}
+
+.home-top {
+	position: relative;
+}
+
+.home-top img {
+	width: 100%;
+}
+
+.home-top p {
+	position: absolute;
+	font-size: 3em;
+	width: 40%;
+	top: 150px;
+	left: 30px;
+}
+
+.recent-works {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+/*footer*/
+
+footer {
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+.see-work {
+	border: 1px solid #b0d2f3;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	margin: auto;
+}
+
+.social-media {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.social-media ul {
+	display: flex;
+	margin: auto;
+	flex-direction: center;
+	justify-content: space-around;
+
+}
+
+.social-media ul li {
+	list-style: none;
+	
+}
+
+.social-media ul li a {
+	color: #a7aab2;
+}
+
+.fab {
+	margin: auto;
+	background-color: #b0d2f3;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 2em;
+}
+
+.short-contact-info {
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+}

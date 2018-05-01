@@ -41,6 +41,8 @@ if ( ! function_exists( 'gocreateme_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size('team', 500, 350, true);
+		add_image_size('service', 300, 200, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -131,6 +133,17 @@ function gocreateme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'gocreateme_scripts' );
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/libs/jquery.isotope.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
+    wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
+ 
+    wp_enqueue_script('isotope-init');
+    wp_enqueue_style('isotope-css');
+}
+ 
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
 
 /**
  * Implement the Custom Header feature.

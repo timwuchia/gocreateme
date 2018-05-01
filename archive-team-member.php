@@ -29,7 +29,7 @@ get_header();
 					while($members->have_posts()){
 						$members->the_post();
 						echo "<div class='team-member'>";
-						the_post_thumbnail("medium");
+						the_post_thumbnail("team");
 						echo "<h3>";
 						the_title();
 						echo "</h3>";

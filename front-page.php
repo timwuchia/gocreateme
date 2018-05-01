@@ -57,7 +57,7 @@ get_header();
 					        	echo "<a href='";
 					        	echo the_permalink();
 					        	echo"'>";
-					        	the_post_thumbnail('medium');
+					        	the_post_thumbnail();
 					        	echo "</a>";
 					        	echo "</div>";
 

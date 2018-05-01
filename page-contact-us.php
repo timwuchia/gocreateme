@@ -18,13 +18,20 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-        <?php
-        while ( have_posts() ) :
-            the_post();
+        	<?php 
 
+        	echo do_shortcode('[ninja_form id=1]');
 
-        endwhile; // End of the loop.
-        ?>
+        	 ?>
+
+        	 <div class="contact-details">
+        	 	<h3>Contact Details</h3>
+        	 	<p>hello@gocreateme.com</p>
+        	 	<p>+1(604)679-5016</p>
+        	 	<p>WeChat: gocreateme</p>
+        	 </div>
+
+       	
 
         </main><!-- #main -->
     </div><!-- #primary -->

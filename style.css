@@ -1089,9 +1089,76 @@ footer {
 	display: flex;
 	width: 80%;
 	margin: auto;
+	justify-content: space-around;
 }
 
 
 .team-member {
 	padding: 30px;
+	margin: auto;
 }
+
+.team-title {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.post-type-archive-team-member #content {
+	margin-top: 50px;
+}
+
+/*services*/
+
+.post-type-archive-service #content {
+	margin-top: 50px;
+}
+
+.all-services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+	margin: auto
+}
+
+.service > p {
+	background-color: #bbc4ce;
+	border-radius: 0px 0px 10px 10px;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+.service {
+	width: 40%;
+}
+
+.service h3 {
+	text-align: center;
+	background-color: #26292E;
+	margin-bottom: 0px;
+	border-radius: 10px 10px 0px 0px;
+	padding: 10px 0px;
+}
+
+.service-title {
+	padding-top: 50px;
+	text-align: center;
+}
+
+/*Contact page*/
+
+.page-id-13 #content {
+	margin-top: 100px;
+}
+
+.page-id-13 #main {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin: auto;
+}
+
+.nf-form-cont {
+	width: 50%;
+}
+

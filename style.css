@@ -1082,3 +1082,16 @@ footer {
 	margin: auto;
 	margin-top: 50px;
 }
+
+/*about us*/
+
+.all-team-members {
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+
+
+.team-member {
+	padding: 30px;
+}

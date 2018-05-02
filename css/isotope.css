@@ -51,3 +51,18 @@
 }
  
 /* End: Recommended Isotope styles */
+
+#isotope-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.item {
+  width: 25%;
+}
+
+.blog #content {
+  margin-top: 100px;
+}

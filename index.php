@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The main template file
  *
@@ -44,9 +44,8 @@ get_header();
 			 }
 			 ?> 
 			 <div class="<?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
-			 <h3><?php the_title(); ?></h3>
 			         <?php if ( has_post_thumbnail() ) { 
-			                      the_post_thumbnail();
+			                      the_post_thumbnail("medium");
 			                } ?>
 		 </div> <!-- end item -->
     <?php endwhile;  ?>

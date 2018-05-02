@@ -29,10 +29,15 @@ get_header();
 					while($services->have_posts()){
 						$services->the_post();
 						echo "<div class='service'>";
+						echo "<div class='service-img'>";
+						the_post_thumbnail("medium");
+						echo "</div>";
+						echo "<div class='service-content'>";
 						echo "<h3>";
 						the_title();
 						echo "</h3>";
-						the_content();
+						the_excerpt();
+						echo "</div>";
 						echo "</div>";
 					}
 					echo "</div>";

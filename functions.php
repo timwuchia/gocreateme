@@ -134,16 +134,7 @@ function gocreateme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gocreateme_scripts' );
 
-function add_isotope() {
-    wp_register_script( 'isotope', get_template_directory_uri().'/js/libs/jquery.isotope.min.js', array('jquery'),  true );
-    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
-    wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
- 
-    wp_enqueue_script('isotope-init');
-    wp_enqueue_style('isotope-css');
-}
- 
-add_action( 'wp_enqueue_scripts', 'add_isotope' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -199,3 +190,34 @@ function change_post_object_label() {
     $labels->not_found_in_trash = 'No Works found in Trash';
 }
 add_action( 'init', 'change_post_object_label' );
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/libs/jquery.isotope.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
+    wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
+ 
+    wp_enqueue_script('isotope-init');
+    wp_enqueue_style('isotope-css');
+}
+ 
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
+
+
+
+function gocreateme_excerpt_length($length){
+		return 20;
+}
+add_filter('excerpt_length','gocreateme_excerpt_length',999);
+
+function gocreateme_excerpt_ending($more){
+
+	return "<a href='" . get_permalink() . "'>...READ MORE...</a>";
+
+}
+add_filter('excerpt_more', 'gocreateme_excerpt_ending');
+
+function scroll_up($more){
+
+	return "<a href='" . get_permalink() . "'>...READ MORE...</a>";
+
+}

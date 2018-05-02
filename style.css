@@ -1113,32 +1113,22 @@ footer {
 	margin-top: 50px;
 }
 
-.all-services {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 80%;
-	margin: auto
+
+.service-img {
+	margin-right: 30px;
 }
 
-.service > p {
-	background-color: #bbc4ce;
-	border-radius: 0px 0px 10px 10px;
-	margin-top: 0px;
-	padding: 10px;
+.service-content {
+	width: 300px;
 }
 
 .service {
 	width: 40%;
+	display: flex;
+	margin: auto;
 }
 
-.service h3 {
-	text-align: center;
-	background-color: #26292E;
-	margin-bottom: 0px;
-	border-radius: 10px 10px 0px 0px;
-	padding: 10px 0px;
-}
+
 
 .service-title {
 	padding-top: 50px;
@@ -1147,11 +1137,11 @@ footer {
 
 /*Contact page*/
 
-.page-id-13 #content {
+.page-id-16 #content {
 	margin-top: 100px;
 }
 
-.page-id-13 #main {
+.page-id-16 #main {
 	display: flex;
 	justify-content: space-around;
 	width: 70%;

@@ -213,3 +213,7 @@ function scroll_up($more){
 	return "<a href='" . get_permalink() . "'>...READ MORE...</a>";
 
 }
+
+function is_blog () {
+    return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
+}

@@ -15,7 +15,22 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<h3 class="see-work"><a href="https://gocreateme.com/work/">See Our Work</a></h3>
+		
+
+
+	<?php 
+
+	global $wp_query;
+
+	if ( isset( $wp_query ) && !(bool) $wp_query->is_posts_page ) {
+    //static blog page
+
+
+	 ?>
+    <h3 class="see-work"><a href="https://gocreateme.com/work/">See Our Work</a></h3>
+    <?php } ?>
+
+		
 
 		<h3 class="short-contact-info">hello@gocreateme.com | 7788987654</h3>
 

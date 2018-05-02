@@ -470,7 +470,7 @@ html {
 
 body {
 	/*background: #fff;*/
-    background: #2F3238;
+    background: white;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -1017,7 +1017,7 @@ object {
 
 .home-top p {
 	position: absolute;
-	font-size: 3em;
+	font-size: 2.5em;
 	width: 40%;
 	top: 150px;
 	left: 30px;
@@ -1026,7 +1026,14 @@ object {
 .recent-works {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
 	margin-top: 50px;
+}
+
+.recent-work-wrapper {
+	width: 25%;
 }
 
 /*footer*/
@@ -1083,6 +1090,11 @@ footer {
 	margin-top: 50px;
 }
 
+.see-work a {
+	text-decoration: none;
+	color: black;
+}
+
 /*about us*/
 
 .all-team-members {
@@ -1123,9 +1135,10 @@ footer {
 }
 
 .service {
-	width: 40%;
+	width: 80%;
 	display: flex;
 	margin: auto;
+	justify-content: center;
 }
 
 
@@ -1150,5 +1163,229 @@ footer {
 
 .nf-form-cont {
 	width: 50%;
+} 
+
+.blog #content {
+	margin-top: 100px;
 }
 
+.post-content {
+	width: 300px;
+}
+
+.all-posts {
+	width: 80%;
+	margin: auto;
+}
+
+.ind-post {
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	
+}
+
+/*responsive menu*/
+
+.menu-mobile-menu-container {
+	display: none;
+}
+
+.menu-btn {
+	display: none;
+}
+
+@media only screen and (max-width: 1180px){
+	.home-top p {
+		font-size: 2em;
+		top: 100px;
+	}
+
+	.post-content {
+		width: 30%;
+	}
+}
+
+
+@media only screen and (max-width: 900px){
+	.home-top p {
+		font-size: 1.5em;
+	}
+
+	.page-id-16 #main {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	/*mobile menu*/
+
+	.fixed-body {
+		overflow: hidden;
+	}
+
+	.menu-menu-1-container {
+		display: none;
+	}
+
+	.menu-mobile-menu-container {
+		display: block;
+		position: fixed;
+		z-index: 50;
+		background-color: rgba(0, 0, 0, 0.8);
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		transition: top 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.mobile-menu-show {
+	    top: 0%;
+	    transition: top 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.menu-btn {
+		display: flex;
+		flex-direction: column;
+		width: 59px;
+		height: 20px;
+		justify-content: space-around;
+        padding: 0;
+        position: relative;
+	}
+
+	.menu-bar {
+		width: 35px;
+		height: 3px;
+		background-color: #b0d2f3;
+	} 
+
+	#mobile-menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 50%;
+		margin-top: 100px;
+	}
+
+	#mobile-menu li {
+		list-style: none;
+	}
+
+	#mobile-menu li a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.menu-btn-top {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu-btn-middle {
+        display: block;
+    }
+
+    .menu-btn-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .animate .menu-btn-top {
+        top: calc(50% - 1px);
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .animate .menu-btn-bottom {
+        bottom: calc(50% - 1px);
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }   
+}
+
+@media only screen and (max-width: 700px) {
+	.home-top p {
+		font-size: 1.25em;
+		top: 30%;
+		width: 50%;
+	}
+
+	.social-media {
+		width: 80%;
+	}
+
+	.social-media ul {
+		padding-left: 0px;
+	}
+
+	.short-contact-info {
+		font-size: 1em;
+	}
+
+	.fab {
+		font-size: 1.5em;
+	} 
+
+	.main-navigation ul {
+		display: block;
+	}
+
+	.all-team-members {
+		flex-direction: column;
+	}
+
+	.ind-post {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40px;
+		width: 80%;
+	}
+
+	.post-content {
+		width: 100%;
+	}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+	.home-top p {
+		font-size: 1em;
+		width: 70%;
+	}
+
+	.recent-works {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.recent-work-wrapper {
+		width: 70%;
+	}
+
+	.service {
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+
+	.fab {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.home-top p {
+		font-size: 8px;
+		width: 70%;
+		top: 60%;
+	}
+}

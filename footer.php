@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<h3 class="see-work">See Our Work</h3>
+		<h3 class="see-work"><a href="https://gocreateme.com/work/">See Our Work</a></h3>
 
 		<h3 class="short-contact-info">hello@gocreateme.com | 7788987654</h3>
 
@@ -33,10 +33,14 @@
 
 <?php wp_footer(); ?>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+ <script type="text/javascript">
+ 	$('.grid').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+ </script>
 
 </body>
 </html>

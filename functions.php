@@ -47,6 +47,7 @@ if ( ! function_exists( 'gocreateme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'gocreateme' ),
+			'mobile-menu' => esc_html__( 'Mobile Menu', 'gocreateme' )
 		) );
 
 		/*
@@ -128,6 +129,8 @@ function gocreateme_scripts() {
 
 	wp_enqueue_script( 'gocreateme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', array(), '20151215', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -190,17 +193,6 @@ function change_post_object_label() {
     $labels->not_found_in_trash = 'No Works found in Trash';
 }
 add_action( 'init', 'change_post_object_label' );
-
-function add_isotope() {
-    wp_register_script( 'isotope', get_template_directory_uri().'/js/libs/jquery.isotope.min.js', array('jquery'),  true );
-    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
-    wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
- 
-    wp_enqueue_script('isotope-init');
-    wp_enqueue_style('isotope-css');
-}
- 
-add_action( 'wp_enqueue_scripts', 'add_isotope' );
 
 
 

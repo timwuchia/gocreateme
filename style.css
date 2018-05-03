@@ -1335,9 +1335,7 @@ footer {
 		font-size: 1em;
 	}
 
-	.fab {
-		font-size: 1.5em;
-	} 
+	
 
 	.main-navigation ul {
 		display: block;
@@ -1383,7 +1381,10 @@ footer {
 
 	.fab {
 		font-size: 1em;
-	}
+		width: 25px;
+		height: 25px;
+		border-radius: 5px;
+	} 
 }
 
 @media only screen and (max-width: 400px) {

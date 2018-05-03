@@ -1027,13 +1027,12 @@ object {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width: 90%;
 	margin: auto;
 	margin-top: 50px;
 }
 
 .recent-work-wrapper {
-	width: 25%;
+	width: 30%;
 }
 
 /*footer*/
@@ -1202,6 +1201,14 @@ footer {
 
 .single-post-subtitle {
 	text-align: center;
+}
+
+.single .ind-post {
+	justify-content: center;
+}
+
+.single .post-image {
+	margin-right: 30px;
 }
 
 /*responsive menu*/
@@ -1384,10 +1391,11 @@ footer {
 	.recent-works {
 		flex-direction: column;
 		align-items: center;
+		margin-top: 20px;
 	}
 
 	.recent-work-wrapper {
-		width: 70%;
+		width: 100%;
 	}
 
 	.service {
@@ -1405,7 +1413,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
 	.home-top p {
-		font-size: 8px;
+		font-size: 1em;
 		width: 70%;
 		top: 60%;
 	}

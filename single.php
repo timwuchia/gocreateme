@@ -17,15 +17,67 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+				echo "<div class='single-page-title'>";
+				echo "<h3 class='single-post-title'>";
+				the_title();
+				echo "</h3>";
+				if(function_exists("get_field")) {
+					if(get_field("sub_title")) {
+						echo "<p class='single-post-subtitle'>";
+						the_field("sub_title");
+						echo "</p>";
+					}
+				}
+				echo "</div>";
 
-			the_post_navigation();
+			?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<?php
 
+				echo "<div class='ind-post'>";
+				echo "<div class='post-image'>";
+				the_post_thumbnail("large");
+				echo "</div>";
+				echo "<div class='post-content'>";
+				if(function_exists("get_field")) {
+					if(get_field("contributors")){
+						echo "<div class='contributor'>";
+						echo "<p><span>Contributor: </span>";
+						the_field("contributors");
+						echo "</p>";
+						echo "</div>";
+					}
+				}
+				if(function_exists("get_field")) {
+					if(get_field("completed")){
+						echo "<div class='completed'>";
+						echo "<p><span>Completed: </span>";
+						the_field("completed");
+						echo "</p>";
+						echo "</div>";
+					}
+				}	
+				if(function_exists("get_field")) {
+					if(get_field("website_url")){
+						echo "<div class='completed'>";
+						echo "<p><a href='";
+						the_field("website_url");
+						echo "'>Check out website";
+						echo "</a></p>";	
+						echo "</p>";
+						echo "</div>";
+					}
+				}	
+				the_content();
+				echo "</div>";
+				echo "</div>";
+
+				 ?>
+
+
+			<?php
+
+			
 		endwhile; // End of the loop.
 		?>
 
@@ -33,5 +85,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

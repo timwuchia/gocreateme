@@ -1188,6 +1188,22 @@ footer {
 	
 }
 
+.single-page-title {
+	margin: 50px 0px;
+}
+
+.single #content {
+	margin-top: 100px;
+}
+
+.single-post-title {
+	text-align: center;
+}
+
+.single-post-subtitle {
+	text-align: center;
+}
+
 /*responsive menu*/
 
 .menu-mobile-menu-container {

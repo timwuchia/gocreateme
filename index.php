@@ -39,7 +39,36 @@ get_header();
 				echo "<div class='post-content'>";
 				echo "<h3>";
 				the_title();
-				echo "</h3>";	
+				echo "</h3>";
+				if(function_exists("get_field")) {
+					if(get_field("contributors")){
+						echo "<div class='contributor'>";
+						echo "<p><span>Contributor: </span>";
+						the_field("contributors");
+						echo "</p>";
+						echo "</div>";
+					}
+				}
+				if(function_exists("get_field")) {
+					if(get_field("completed")){
+						echo "<div class='completed'>";
+						echo "<p><span>Completed: </span>";
+						the_field("completed");
+						echo "</p>";
+						echo "</div>";
+					}
+				}	
+				if(function_exists("get_field")) {
+					if(get_field("website_url")){
+						echo "<div class='completed'>";
+						echo "<p><a href='";
+						the_field("website_url");
+						echo "'>Check out website";
+						echo "</a></p>";	
+						echo "</p>";
+						echo "</div>";
+					}
+				}	
 				the_excerpt();
 				echo "</div>";
 				echo "</div>";

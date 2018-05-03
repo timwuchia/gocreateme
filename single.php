@@ -24,6 +24,7 @@ get_header();
 				if(function_exists("get_field")) {
 					if(get_field("sub_title")) {
 						echo "<p class='single-post-subtitle'>";
+						echo "Go Create Me";
 						the_field("sub_title");
 						echo "</p>";
 					}

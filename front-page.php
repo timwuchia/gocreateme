@@ -20,7 +20,7 @@ get_header();
 
         <div class="home-top">
 	        <img src="<?php the_field('top_banner'); ?>" class="top-banner" alt="top-banner" />
-	        <p>We are a web development team based in Vancouver, feel free to contact us if you need a website</p>
+	        <p>Go Create a Website</p>
         </div>
 
        <?php

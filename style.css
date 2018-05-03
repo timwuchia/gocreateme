@@ -1226,6 +1226,12 @@ footer {
 	display: none;
 }
 
+.home-top p {
+	font-size: 3em;
+	top: 100px;
+}
+
+
 @media only screen and (max-width: 1180px){
 	.home-top p {
 		font-size: 2em;
@@ -1345,11 +1351,7 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-	.home-top p {
-		font-size: 1.25em;
-		top: 30%;
-		width: 50%;
-	}
+
 
 	.social-media {
 		width: 80%;
@@ -1388,10 +1390,7 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-	.home-top p {
-		font-size: 1em;
-		width: 70%;
-	}
+
 
 	.recent-works {
 		flex-direction: column;
@@ -1416,16 +1415,4 @@ footer {
 	} 
 }
 
-@media only screen and (max-width: 400px) {
-	.home-top p {
-		font-size: 1em;
-		width: 70%;
-		top: 60%;
-	}
-}
-.home-top p {
-		font-size: 1em;
-		width: 70%;
-		top: 60%;
-	}
-}
+

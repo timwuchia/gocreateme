@@ -1416,3 +1416,33 @@ footer {
 }
 
 
+/*Jeff's Small space*/
+
+@font-face {
+font-family: 'ostrich-sans';
+src: url(ostrich-regular.ttf);
+}
+
+.logo {
+	font-family: 'ostrich-sans' !important;
+    font-size: 3.125em;
+    letter-spacing: .125rem;
+    text-align: left;
+    margin: 0;
+    line-height: .9;
+}
+
+.go {
+	display: inline-block;
+    color: #F77F00;
+    font-size: 1.5rem;
+    margin-right: .125em;
+}
+
+.me {
+	display: inline-block;
+    color: #F77F00;
+    font-size: 1.5rem;
+    margin-right: .125em;
+}
+

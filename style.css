@@ -396,7 +396,7 @@ select,
 optgroup,
 textarea {
 	color: #a7aab2;
-	font-family: sans-serif;
+	font-family: 'Open Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -469,8 +469,8 @@ html {
 }
 
 body {
-	/*background: #fff;*/
-    background: white;
+	background: #2F3238;
+    /*background: white;*/
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -615,15 +615,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #DE5E60;
 }
 
 a:visited {
-	color: purple;
+    color: #DE5E60;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #DE5E60;
 }
 
 a:focus {
@@ -985,7 +985,7 @@ object {
 }
 
 #site-navigation {
-	background-color: black;
+	background-color: #26292E;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -1004,7 +1004,7 @@ object {
 }
 
 #site-navigation ul li a {
-	color: #a7aab2;
+	color: #fff;
 }
 
 .home-top {
@@ -1044,7 +1044,7 @@ footer {
 }
 
 .see-work {
-	border: 1px solid #b0d2f3;
+	border: 1px solid #DE5E60;
 	width: 150px;
 	text-align: center;
 	padding: 10px;
@@ -1072,27 +1072,30 @@ footer {
 }
 
 .social-media ul li a {
-	color: #a7aab2;
+	color: #2F3238;
 }
 
 .fab {
 	margin: auto;
-	background-color: #b0d2f3;
-	padding: 10px;
-	border-radius: 5px;
-	font-size: 2em;
+    background-color: #DE5E60;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+    width: 40px;
+    height: 40px;
 }
 
 .short-contact-info {
 	text-align: center;
 	display: block;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .see-work a {
 	text-decoration: none;
-	color: black;
+	color: #fff;
 }
 
 /*about us*/

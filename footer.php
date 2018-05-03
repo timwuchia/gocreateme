@@ -27,12 +27,12 @@
 
 
 	 ?>
-    <h3 class="see-work"><a href="https://gocreateme.com/work/">See Our Work</a></h3>
+    <div class="see-work"><a href="https://gocreateme.com/work/">See Our Work</a></div>
     <?php } ?>
 
 		
 
-		<h3 class="short-contact-info">hello@gocreateme.com | 7788987654</h3>
+		<center><p><a href="mailto:gocreateme@gmail.com">gocreateme@gmail.com</a> | <a href="tel:16463012007">646.301.2007</a></p></center>
 
 		<nav class="social-media">
 			<ul>

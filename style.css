@@ -1032,13 +1032,12 @@ object {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width: 90%;
 	margin: auto;
 	margin-top: 50px;
 }
 
 .recent-work-wrapper {
-	width: 25%;
+	width: 30%;
 }
 
 /*footer*/
@@ -1209,6 +1208,14 @@ footer {
 	text-align: center;
 }
 
+.single .ind-post {
+	justify-content: center;
+}
+
+.single .post-image {
+	margin-right: 30px;
+}
+
 /*responsive menu*/
 
 .menu-mobile-menu-container {
@@ -1218,6 +1225,12 @@ footer {
 .menu-btn {
 	display: none;
 }
+
+.home-top p {
+	font-size: 3em;
+	top: 100px;
+}
+
 
 @media only screen and (max-width: 1180px){
 	.home-top p {
@@ -1338,11 +1351,7 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-	.home-top p {
-		font-size: 1.25em;
-		top: 30%;
-		width: 50%;
-	}
+
 
 	.social-media {
 		width: 80%;
@@ -1381,18 +1390,16 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-	.home-top p {
-		font-size: 1em;
-		width: 70%;
-	}
+
 
 	.recent-works {
 		flex-direction: column;
 		align-items: center;
+		margin-top: 20px;
 	}
 
 	.recent-work-wrapper {
-		width: 70%;
+		width: 100%;
 	}
 
 	.service {
@@ -1408,10 +1415,4 @@ footer {
 	} 
 }
 
-@media only screen and (max-width: 400px) {
-	.home-top p {
-		font-size: 8px;
-		width: 70%;
-		top: 60%;
-	}
-}
+

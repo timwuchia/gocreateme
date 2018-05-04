@@ -620,15 +620,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #DE5E60;
+	color: #F77F00;
 }
 
 a:visited {
-    color: #DE5E60;
+    color: #F77F00;
 }
 
 a:hover, a:focus, a:active {
-	color: #DE5E60;
+	color: #F77F00;
 }
 
 a:focus {
@@ -1048,7 +1048,7 @@ footer {
 }
 
 .see-work {
-	border: 1px solid #DE5E60;
+	border: 1px solid #F77F00;
 	width: 150px;
 	text-align: center;
 	padding: 10px;
@@ -1081,7 +1081,7 @@ footer {
 
 .fab {
 	margin: auto;
-    background-color: #DE5E60;
+    background-color: #F77F00;
     padding: 5px;
     border-radius: 10px;
     font-size: 2em;

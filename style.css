@@ -1128,6 +1128,14 @@ footer {
 
 /*services*/
 
+.all-services {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+}
+
 .post-type-archive-service #content {
 	margin-top: 50px;
 }
@@ -1142,7 +1150,7 @@ footer {
 }
 
 .service {
-	width: 80%;
+	width: 30%;
 	display: flex;
 	margin: auto;
 	justify-content: center;

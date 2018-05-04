@@ -1132,7 +1132,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -1141,17 +1141,22 @@ footer {
 }
 
 
-.service-img {
-	margin-right: 30px;
+.service-img img {
+	display: block;
+	margin: auto;
 }
 
 .service-content {
 	width: 300px;
+	margin: auto;
+}
+
+.service-content h3 {
+	text-align: center;
 }
 
 .service {
 	width: 30%;
-	display: flex;
 	margin: auto;
 	justify-content: center;
 }
@@ -1275,6 +1280,13 @@ footer {
 		font-size: 2em;
 		top: 100px;
 	}
+
+	.service {
+		width: 45%;
+	}
+
+
+	
 
 	.post-content {
 		width: 30%;
@@ -1436,6 +1448,19 @@ footer {
 	margin-bottom: 25px;
 	}
 
+	.service {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	.all-services {
+		flex-direction: column;
+		align-items: center;
+	}
 
 }
 

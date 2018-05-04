@@ -1253,6 +1253,7 @@ footer {
 
 .menu-btn {
 	display: none;
+	align-self: center;
 }
 
 .home-top p {
@@ -1333,8 +1334,10 @@ footer {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		height: 50%;
+		height: 80%;
 		margin-top: 100px;
+		margin: auto;
+		padding-top: 150px;
 	}
 
 	#mobile-menu li {
@@ -1413,6 +1416,15 @@ footer {
 
 	.post-content {
 		width: 100%;
+	}
+
+	.all-posts {
+		flex-direction: column;
+	}
+
+	.blog .ind-post {
+	width: 100%;
+	margin-bottom: 25px;
 	}
 
 

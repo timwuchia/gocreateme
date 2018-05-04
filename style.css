@@ -1194,13 +1194,14 @@ footer {
 }
 
 .blog .post-title {
-	background-color: #F77F00;
-	padding: 1px;
+	
 }
 
 .blog .ind-post h3 {
 	text-align: center;
 	color: #26292E;
+	background-color: #F77F00;
+	margin-bottom: 0px;
 	
 }
 

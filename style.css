@@ -1183,9 +1183,37 @@ footer {
 .all-posts {
 	width: 80%;
 	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.ind-post {
+.blog .ind-post {
+	width: 45%;
+	margin-bottom: 25px;
+}
+
+.blog .post-title {
+	background-color: #F77F00;
+	padding: 1px;
+}
+
+.blog .ind-post h3 {
+	text-align: center;
+	color: #26292E;
+	
+}
+
+
+.blog .ind-post .post-image img {
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+
+
+.single-post .ind-post {
 	display: flex;
 	margin: auto;
 	justify-content: space-around;
